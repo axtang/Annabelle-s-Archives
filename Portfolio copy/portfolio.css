@@ -1,0 +1,485 @@
+@import
+url('https://fonts.googleapis.com/css?family=Oxygen: 400,400,700,900');
+
+
+@media screen and (min-width: 750px) {
+
+    header h1 {
+    	font-size: 3.3rem;
+    }
+    
+	.introduction h1 {
+		font-size: 3.5rem;
+	}
+	.work h3 {
+		font-size: 3rem;
+	}
+	.button {
+		padding: 0.5em 1.75em;
+	}
+}
+
+
+@media screen and (min-width: 570px)  and (max-width: 749px ) {
+
+	header h1 {
+		font-size: 2.8rem;
+	}
+
+	.work h3 {
+		font-size: 2rem;
+	}
+
+	.button {
+		padding: 0.5em 0.75em;
+	}
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 569px) {
+
+	header h1 {
+		font-size: 2rem; 
+	}
+
+	.work h3 {
+		font-size: 1rem;
+	}
+
+	.button {
+		font-size: 1rem;
+	}
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+
+/* general */
+
+
+body {
+	margin:0;
+	font-family: 'Oxygen', sans-serif;
+	text-align: center;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/*site-top*/
+
+.show-menu {
+	margin: 0;
+	padding: 2em;
+	width: 100%;
+	font-family: "Oxygen", sans-serif;
+	font-weight: 900;
+	text-decoration: none;
+	color: #fff;
+	background-color: #c83349;
+	text-align: center;
+	display: none;
+	border-bottom: #e06377
+}
+
+.topnav {
+	top:0;
+	margin: 0;
+	width: 100%;
+	overflow: hidden;
+	background-color: #ffcc5c;
+	top:6em;
+	padding:1em;
+	z-index: 100;
+	opacity: 0.8;
+}
+
+
+.topnav ul {
+	margin: 0;
+	padding: 0;
+	top:0;
+	list-style-type: none;
+}
+
+.topnav li {
+	display: inline-block;
+
+}
+.topnav li a {
+	padding: 3em;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1rem;
+	color: #034f84;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+.topnav a:hover,
+.topnav a:focus {
+	color: #fff;
+}
+
+
+/*hide checkbox */
+
+
+input[type=checkbox] {
+	display: none;
+}
+
+
+/* menu will pop up when invisible checkbox is checkdd */
+
+
+input[type = checkbox]:checked ~ #menu {
+	display: block;
+}
+
+
+@media screen and (max-width: 550px) {
+	.topnav ul {
+		display: none;
+	}
+	.topnav li{
+		display: block;
+		position: static;
+		margin-bottom: 1px;
+	}
+	/* make all menu links full width */
+	.topnav ul li, li a {
+		width: 100%;
+		padding: 1.5rem;
+	}
+	.show-menu {
+		display: block;
+		padding: 1rem;
+	}
+
+}
+
+
+/*header*/
+
+
+header {
+	margin: 0;
+	padding-top:0;
+	width: 100%;
+	text-transform: uppercase;
+	color: #50394c;
+	position: relative;
+}
+
+header .col-md-6 {
+	display: block;
+}
+
+
+/* styling for logo in front of the header */
+
+
+.element .logo {
+	width: 80px;
+	margin:0;
+	padding:0;
+	display: inline-block;
+}
+
+/* styling for title of blog */
+
+header .element {
+	padding: 0;
+	position: relative;
+	z-index: 99;
+}
+
+
+/* article*/
+
+article {
+	background-color: #667292;
+	background-size: cover;
+	margin: 0;
+	padding: 4rem;
+	height: auto;
+	width: 100vw;
+	outline: 2px solid #ffcc5c;
+	outline-offset: -2.5em;
+}
+
+
+article .introduction {
+	color: #fff;
+	font-size: 3rem;
+}
+
+.introduction h1 {
+	color: #fff;
+	position: relative;
+	left: 25%;
+	transform:translate(-25%);
+	margin: 0;
+	padding: 1em;
+}
+
+.introduction p {
+	margin: 0;
+	padding: 2.3em;
+	color: #fff;
+	position: relative;
+	font-size: 35px;
+	display: inline-block;
+}
+
+
+@media screen and (min-width: 570px)  and (max-width: 850px ) {
+	.introduction h1 {
+		font-size: 3rem;
+	}
+
+	.introduction p {
+		font-size: 25px;
+	}
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 569px) {
+	.introduction h1 {
+		font-size: 2rem;
+	}
+
+	.introduction p {
+		font-size: 15px;
+	}
+
+	article {
+		height: auto;
+	}
+}
+
+/* work */
+
+.work {
+	margin: 0;
+	width: 100%;
+	padding: 2em;
+	background-color: #eca1a6;
+}
+
+.work h2 {
+	font-size: 2.5rem;
+	color: #3e4444;
+}
+
+
+.work h3 {
+	font-size: 1.6rem;
+}
+
+.text {
+	background-color: #fff;
+	color: #e06377;
+	font-size: 1.5rem;
+	padding: 10px 25px;
+	display: inline-block;
+	width: 100%;
+
+}
+
+
+.work .container {
+	position: relative;
+	width: 100%;
+}
+
+.image {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: 40em;
+	transition: 0.5s ease;
+	backface-visibility: hidden;
+}
+
+.middle{
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+
+.work figure {
+	border: 0;
+	max-width: 100%;
+	margin: 0;
+	position: center;
+	vertical-align: middle;
+	display: table-cell;
+	object-fit: cover;
+	z-index: 1;
+}
+
+.pro-description {
+	color: #fff;
+	position: relative;
+	z-index: 100;
+	bottom: 3em;
+	left: 0;
+	right: 0;
+}
+
+
+/*fadin click effect*/
+
+.work .container:hover .image{
+	opacity: 0.3;
+}
+
+
+.work .container:hover .middle {
+	opacity: 1;
+}
+
+
+/*footer*/
+
+.col-md-6 .container1 {
+	background-color: #deeaee;
+	color: #50394c;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 1em;
+	position: relative;
+	display: block;
+}
+
+
+.col-md-6 .container2 {
+	background-color: #8d9db6;
+	color: #034f84;
+	text-transform: uppercase;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 3em;
+	position: absolute;
+	text-align: center;
+
+}
+
+
+.container2 h2 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-weight: 600
+}
+
+
+/* can also change individual icon color through nth-child */
+
+
+.unstyled-list {
+	list-style: none;
+}
+
+
+.unstyled-list li {
+    margin: 0;
+    padding: 3em;
+    list-style: none;
+    font-size: 24px;
+    transition: 0.5s;
+    text-align: center;
+    display:inline-block;
+}
+
+
+.unstyled-list li a {
+	width: 100%;
+	padding: 0;
+	color: #c94c4c;
+}
+
+
+.unstyled-list li a:hover,
+.unstyled-list li a:focus {
+	color: #fff;
+	cursor: pointer;
+}
+
+
+@media screen and (max-width: 550px) {
+	.unstyled-list li {
+		display:block;
+		width: 100%;
+	}
+}
+
+
+/*typography*/
+
+
+.button {
+	font-size: 1rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-width: 2px;
+	border-style: solid;
+	padding: 0.5em 1.75em;
+	display: inline-block;
+	border-color: #f9d5e5;
+	color: #000;
+	background-color: #f9d5e5;
+	font-weight: 800;
+	cursor: pointer;
+	z-index: 999;
+}
+
+.button:hover {
+	background-image: none;
+	background-color: #eea29a;
+	cursor: pointer;
+}
+
+
+.button-small {
+	font-size: 0.6rem;
+	font-weight: 700;
+	color: #000;
+}
+
+
+.button-accent {
+	color: #000;
+	
+}
+
+.button-accent:hover,
+.button-accent:focus {
+	background-color: grey;
+	border-color: #fff;
+	color: #000;
+	cursor: pointer;
+}
+
+
+
+
+
+
