@@ -28,5 +28,9 @@ I just want to keep this portfolio website cluttered from non-new-project-relate
 
 This website will be updated as soon as I have created new projects.
 
+Additionally, I have been trying to let Github host this website but have not been successful with it. 
+
+I will keep trying to work it through.
+
 ## Acknowledgement
 Thank you for visiting my website :)
