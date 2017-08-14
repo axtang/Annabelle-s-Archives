@@ -8,6 +8,8 @@ Go to: https://axtang.github.io/Annabelle-s-Archives/
 1. Create a Github account if you don't have one.
 2. Log into Github with your account.
 3. Click the Fork button on the upper-right of this page under your profile picture.
+4. Download the package through zip package 
+ or run `git clone https//www.github.axtang/Annabelle-s-Archives.git`.
 
 ## How do I run the portfolio locally?
 1. Right-click for Windows and double-click for Mac on the `index.html` file.
