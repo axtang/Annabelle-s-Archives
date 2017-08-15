@@ -445,6 +445,16 @@ article .introduction {
 }
 
 
+.unstyled-list li a {
+	color: #c83349;
+}
+
+.unstyled-list li a:hover {
+	color: #fff;
+	cursor: pointer;
+}
+
+
 @media screen and (max-width: 550px) {
 	.unstyled-list li {
 		display:grid;
