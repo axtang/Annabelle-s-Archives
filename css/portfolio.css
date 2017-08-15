@@ -446,6 +446,7 @@ article .introduction {
 
 
 .unstyled-list li a {
+	margin: 0;
 	color: #c83349;
 }
 
