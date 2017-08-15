@@ -447,6 +447,7 @@ article .introduction {
 
 .unstyled-list li a {
 	color: #c83349;
+	margin: 0
 }
 
 .unstyled-list li a:hover {
